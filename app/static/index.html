@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>个人记忆网络 · 数据集蒸馏与挂载引擎</title>
+  <link rel="stylesheet" href="/static/styles.css?v=0.3.1" />
+</head>
+<body>
+  <aside class="nav">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"></div>
+      <div>
+        <strong>个人记忆大脑</strong>
+        <span>数据集蒸馏与挂载 · v0.3</span>
+      </div>
+    </div>
+    <nav>
+      <a href="#/" data-route="/">蒸馏主控台</a>
+      <a href="#/brain" data-route="/brain">知识结晶 (Brain)</a>
+      <a href="#/mount" data-route="/mount">一秒挂载 (Mount)</a>
+      <a href="#/epochs" data-route="/epochs">演进历史 (Epochs)</a>
+      <a href="#/connect" data-route="/connect">投喂与算力配置</a>
+    </nav>
+    <div class="nav-foot">
+      <code>C:\个人记忆库</code>
+      <span>原始记录当训练集 · 越炼越薄</span>
+    </div>
+  </aside>
+  <main>
+    <header class="top">
+      <div>
+        <h1 id="page-title">蒸馏主控台</h1>
+        <p id="page-sub"></p>
+      </div>
+      <div class="top-actions">
+        <button id="btn-sample" class="ghost">放入示例投喂文件</button>
+        <button id="btn-distill">⚡ 跑一轮 Epoch 蒸馏</button>
+      </div>
+    </header>
+    <div id="jobbar" class="jobbar" hidden></div>
+    <section id="view" class="view"></section>
+  </main>
+  <div id="toast" class="toast" hidden></div>
+  <script src="/static/app.js?v=0.3.0"></script>
+</body>
+</html>

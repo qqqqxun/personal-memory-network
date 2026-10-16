@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "个人记忆网络采集",
+  "description": "把 ChatGPT、Claude、Gemini、Grok 网页版里已经完成的对话记到本机。不登录厂商账号，也不把记录发到云端。",
+  "version": "0.1.0",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*",
+    "https://grok.com/*",
+    "https://grok.x.ai/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://grok.com/*",
+        "https://grok.x.ai/*"
+      ],
+      "js": ["adapters.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "个人记忆网络"
+  }
+}
