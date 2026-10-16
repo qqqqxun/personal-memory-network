@@ -27,8 +27,8 @@
 需要 Python 3.10 或更高版本。目前只在 Windows 上测试过。
 
 ```bash
-git clone <仓库地址>
-cd <仓库目录>
+git clone https://github.com/qqqqxun/personal-memory-network.git
+cd personal-memory-network
 python -m pip install -r requirements.txt
 python -m app
 ```
