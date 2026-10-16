@@ -65,7 +65,7 @@ Issues and pull requests are welcome. Please do not include personal chats, API 
 
 ## License
 
-[MIT](LICENSE). You can use, modify, and redistribute this project, including commercially, as long as you keep the copyright notice. It is provided without warranty.
+[CC BY-NC-SA 4.0](LICENSE). You may use, copy, and modify this project for non-commercial purposes. If you share the project or a modified version, you must give credit, keep it under this same license, and provide the source. You may not sell it or use it in a commercial product or service. It is provided without warranty.
 
 ---
 
@@ -134,4 +134,4 @@ python -m pytest -q
 
 ## 许可证
 
-[MIT](LICENSE)。可以自由使用、修改和再分发，包括商业用途，只需保留版权声明。软件按原样提供，不含任何担保。
+[CC BY-NC-SA 4.0](LICENSE)（署名-非商业性使用-相同方式共享）。可以出于非商业目的使用、复制和修改。如果公开分享原版或修改版，必须署名，继续使用同一许可证，并提供源代码。不得出售，也不得用于商业产品或商业服务。软件按原样提供，不含任何担保。
