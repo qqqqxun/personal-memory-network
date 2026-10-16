@@ -1,3 +1,22 @@
+# Personal Memory Network
+
+Chats with ChatGPT, Claude, Gemini, and Grok stay scattered, and every new conversation starts from nothing. This is a local app that distills those chats, plus your own project notes, into a compact personal knowledge base, then gives the relevant part to whichever AI you use next.
+
+The models only compute. The memory stays on your machine, as plain Markdown you can open and edit.
+
+![Demo: inbox, distillation result, project volume, and a mount pack](docs/demo.gif)
+
+The demo uses a fictional bookkeeping app. It shows the four steps: a note lands in the inbox, distillation keeps the decision and the rejected approach, that becomes a bounded project volume plus a detail card, and a mount pack is copied for any other AI.
+
+- **You choose what it reads.** Drop official exports or your own files into one folder. Nothing else on the disk is scanned.
+- **It merges, it does not pile up.** Newer facts replace older ones. Abandoned ideas are kept as "do not recommend again". Generic explanations written by the assistant are dropped.
+- **The base stays small as the archive grows.** A short profile, one volume per topic (about 2,000 characters, split into sub-volumes when full), and detail cards that are retrieved only when a question needs them.
+- **Mount it anywhere.** Copy one pack into ChatGPT, Claude, Gemini, Grok, or Cursor.
+
+The full guide below is in Chinese.
+
+---
+
 # 个人记忆网络
 
 一个本地运行的个人知识库。你把自己和 ChatGPT、Claude、Gemini、Grok 等 AI 的聊天记录、项目文档放进一个文件夹，它会调用大模型（默认 Gemini）分批“蒸馏”这些材料：只保留属于你本人的信息，合并进一套长度受控的 Markdown 知识库。以后和任何 AI 开始新对话前，把生成的“挂载包”粘过去，它就能直接了解你的背景、进度和踩过的坑，不用从零开始。
